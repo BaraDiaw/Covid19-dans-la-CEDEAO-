@@ -16,7 +16,7 @@ graphe[1].set_color("red")#colorier Burkina en rouge
 plt.xlabel("Pays de la CEDEAO", size = 12, color = "blue")
 plt.ylabel("Nombre de personnes infectées", size = 12, color = "blue")
 plt.title("Nombre de personnes infectées par le Covid-19 dans la CEDEAO au 26 Mars 2020", color = "black", size = 12)
-fig = matplotlib.pyplot.gcf()#Taille de la figure
+fig = plt.gcf()#Taille de la figure
 fig.set_size_inches(17, 6)
 plt.show()
 
@@ -27,7 +27,7 @@ pays2 = ["Bénin", "Burkina", "Cap Vert", "Cote d'Ivoire", "Gambie", "Ghana", "G
 
 inf = plt.bar(pays2, infectes2, color = ["lime" for i in infectes2], width = 0.5)
 dc = plt.bar(pays2, dcd, color = ["red" for i in dcd], width = 0.5)
-fig = matplotlib.pyplot.gcf()#Taille de la figure
+fig = plt.gcf()#Taille de la figure
 fig.set_size_inches(17, 12)
 plt.xlabel("Pays de la CEDEAO", size = 12, color = "blue")
 plt.yticks(np.arange(0,150,5))
